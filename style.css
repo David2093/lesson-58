@@ -1,0 +1,61 @@
+body {
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+header {
+    margin: 10px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 70px;
+    transition: 0.3s;
+    position: relative;
+    animation: btnmove 2s ease-in-out infinite alternate;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: skyblue;
+    animation-play-state: paused;
+}
+
+@keyframes btnmove {
+  0% {
+    transform: translateY(0);   
+  }
+  100% {
+    transform: translateY(-20px);  
+  }
+}
+
+.btn_hero {
+  padding: 5px 10px;
+  cursor: pointer;
+  animation: scaleBtn 1.5s ease-in-out infinite alternate;
+  position: absolute;
+  left: 240px;
+  bottom: 540px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+@keyframes scaleBtn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
